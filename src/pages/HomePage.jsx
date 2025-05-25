@@ -7,59 +7,88 @@ function HomePage() {
   const { isAuthenticated } = useAuth();
 
   return (
-    <div className="homepage-container">
-      <section className="hero-section">
-        <h1>Train your algorithms</h1>
-        <p>Compete, practice, and improve your coding skills.</p>
-        {!isAuthenticated && (
-          <Link to="/register" className="get-started-button">Get Started</Link>
-        )}
+    <div className="homepage">
+      <section className="hero">
+        <div className="hero-content">
+          <h1 className="hero-title">Master Competitive Programming</h1>
+          <p className="hero-subtitle">
+            Challenge yourself, compete with others, and elevate your coding skills to new heights
+          </p>
+          {!isAuthenticated && (
+            <Link to="/register" className="cta-button">
+              Start Your Journey
+            </Link>
+          )}
+        </div>
       </section>
 
-      <section className="features-section">
-        <h2>Platform Features</h2>
-        <div className="features-grid">
-          <div className="feature-card">
-            {/* Add icon here */}
-            <h2>PvP Code Battles</h2>
-            <p>Compete against other users in real-time coding challenges.</p>
-          </div>
-          <div className="feature-card">
-            {/* Add icon here */}
-            <h2>Smart Task Selection</h2>
-            <p>Solve weaknesses to improve your problem-solving skills.</p>
-          </div>
-          <div className="feature-card">
-            {/* Add icon here */}
-            <h2>Ratings & Achievements</h2>
-            <p>Keep track of your ranking and accomplishments.</p>
-          </div>
-          <div className="feature-card">
-            {/* Add icon here */}
-            <h2>Scheduler</h2>
-            <p>Plan and manage your coding practice sessions.</p>
+      <section className="features">
+        <div className="container">
+          <div className="features-grid">
+            <div className="feature-card">
+              <div className="feature-icon">🏆</div>
+              <h3 className="feature-title">PvP Code Battles</h3>
+              <p className="feature-description">
+                Challenge other programmers in real-time coding battles and prove your skills
+              </p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">📈</div>
+              <h3 className="feature-title">Smart Progress Tracking</h3>
+              <p className="feature-description">
+                Monitor your improvement with detailed statistics and performance analytics
+              </p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">🎯</div>
+              <h3 className="feature-title">Targeted Practice</h3>
+              <p className="feature-description">
+                Focus on your weak areas with personalized problem recommendations
+              </p>
+            </div>
+            <div className="feature-card">
+              <div className="feature-icon">🤖</div>
+              <h3 className="feature-title">AI-Powered Learning</h3>
+              <p className="feature-description">
+                Get intelligent suggestions and learn from your mistakes faster
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="how-it-works-section">
-        <h2>How it Works</h2>
-        <div className="how-it-works-steps">
-          <div className="step-card">
-            <h3>Step 1</h3>
-            <p>Select a task from the problem list.</p>
-          </div>
-          <div className="step-card">
-            <h3>Step 2</h3>
-            <p>Write and test your code in the editor.</p>
-          </div>
-          <div className="step-card">
-            <h3>Step 3</h3>
-            <p>Submit your solution and check the results.</p>
-          </div>
-          <div className="step-card">
-            <h3>Step 4</h3>
-            <p>Challenge other users in PvP battles.</p>
+      <section className="how-it-works">
+        <div className="container">
+          <h2 className="section-title">How It Works</h2>
+          <div className="steps-grid">
+            <div className="step-card">
+              <div className="step-number">1</div>
+              <h3 className="step-title">Choose Your Challenge</h3>
+              <p className="step-description">
+                Select from a variety of programming problems or join a PvP battle
+              </p>
+            </div>
+            <div className="step-card">
+              <div className="step-number">2</div>
+              <h3 className="step-title">Write Your Solution</h3>
+              <p className="step-description">
+                Code your solution in your preferred programming language
+              </p>
+            </div>
+            <div className="step-card">
+              <div className="step-number">3</div>
+              <h3 className="step-title">Test and Submit</h3>
+              <p className="step-description">
+                Run your code against test cases and submit when ready
+              </p>
+            </div>
+            <div className="step-card">
+              <div className="step-number">4</div>
+              <h3 className="step-title">Improve and Compete</h3>
+              <p className="step-description">
+                Learn from feedback and challenge others to grow
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -67,4 +96,4 @@ function HomePage() {
   );
 }
 
-export default HomePage; 
+export default HomePage;
