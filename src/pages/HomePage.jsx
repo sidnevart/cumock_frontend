@@ -10,13 +10,13 @@ function HomePage() {
     <div className="homepage">
       <section className="hero">
         <div className="hero-content">
-          <h1 className="hero-title">Master Competitive Programming</h1>
+          <h1 className="hero-title">Соревновательное программирование</h1>
           <p className="hero-subtitle">
-            Challenge yourself, compete with others, and elevate your coding skills to new heights
+            Бросьте вызов себе, соревнуйтесь с другими и поднимите свои навыки программирования на новый уровень
           </p>
           {!isAuthenticated && (
             <Link to="/register" className="cta-button">
-              Start Your Journey
+              Начать путь
             </Link>
           )}
         </div>
@@ -27,30 +27,30 @@ function HomePage() {
           <div className="features-grid">
             <div className="feature-card">
               <div className="feature-icon">🏆</div>
-              <h3 className="feature-title">PvP Code Battles</h3>
+              <h3 className="feature-title">PvP Соревнования</h3>
               <p className="feature-description">
-                Challenge other programmers in real-time coding battles and prove your skills
+                Соревнуйтесь с другими программистами в режиме реального времени
               </p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">📈</div>
-              <h3 className="feature-title">Smart Progress Tracking</h3>
+              <h3 className="feature-title">Умное отслеживание</h3>
               <p className="feature-description">
-                Monitor your improvement with detailed statistics and performance analytics
+                Следите за своим прогрессом с помощью детальной статистики
               </p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">🎯</div>
-              <h3 className="feature-title">Targeted Practice</h3>
+              <h3 className="feature-title">Целевая практика</h3>
               <p className="feature-description">
-                Focus on your weak areas with personalized problem recommendations
+                Фокусируйтесь на слабых местах с персональными рекомендациями
               </p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">🤖</div>
-              <h3 className="feature-title">AI-Powered Learning</h3>
+              <h3 className="feature-title">ИИ-обучение</h3>
               <p className="feature-description">
-                Get intelligent suggestions and learn from your mistakes faster
+                Получайте умные подсказки и учитесь на своих ошибках быстрее
               </p>
             </div>
           </div>
@@ -59,34 +59,34 @@ function HomePage() {
 
       <section className="how-it-works">
         <div className="container">
-          <h2 className="section-title">How It Works</h2>
+          <h2 className="section-title">Как это работает</h2>
           <div className="steps-grid">
             <div className="step-card">
               <div className="step-number">1</div>
-              <h3 className="step-title">Choose Your Challenge</h3>
+              <h3 className="step-title">Выберите задачу</h3>
               <p className="step-description">
-                Select from a variety of programming problems or join a PvP battle
+                Выберите из множества задач или присоединитесь к PvP битве
               </p>
             </div>
             <div className="step-card">
               <div className="step-number">2</div>
-              <h3 className="step-title">Write Your Solution</h3>
+              <h3 className="step-title">Напишите решение</h3>
               <p className="step-description">
-                Code your solution in your preferred programming language
+                Создайте свое решение на любимом языке программирования
               </p>
             </div>
             <div className="step-card">
               <div className="step-number">3</div>
-              <h3 className="step-title">Test and Submit</h3>
+              <h3 className="step-title">Тестирование</h3>
               <p className="step-description">
-                Run your code against test cases and submit when ready
+                Проверьте код на тестовых примерах и отправьте решение
               </p>
             </div>
             <div className="step-card">
               <div className="step-number">4</div>
-              <h3 className="step-title">Improve and Compete</h3>
+              <h3 className="step-title">Развивайтесь</h3>
               <p className="step-description">
-                Learn from feedback and challenge others to grow
+                Учитесь на обратной связи и соревнуйтесь с другими
               </p>
             </div>
           </div>
